@@ -1,0 +1,368 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.badsentence {
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+    background-color: #f79575;
+    line-height: 2;
+  }
+  
+  .goodsentence {
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+    background-color: #C4ED9D;
+    line-height: 2;
+  }
+  
+  .neutral{
+    line-height: 2;
+  }
+  
+  .mediumsentence {
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+    background-color: #FAEBAA;
+    line-height: 2;
+  }
+  
+  .auffaelligkeit h4 {
+      margin-bottom: 0.2rem; 
+      max-width: 540px;
+      font-size: 1.2rem;
+      color: #212529;
+  
+  }
+  
+  .resultcard-grade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid rgb(71, 136, 179);
+    font-size: 80px;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -75px;
+    margin-bottom: -70px;
+  }
+  .result-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+  .result-heading {
+    /* width: 100%; */
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(113, 113, 113);
+    background-color: rgb(222, 222, 222);
+  }
+  .result-footer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .resultcard-header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(71, 136, 179);
+    align-items: center;
+    font-size: 1.2rem;
+  
+  }
+  
+  .resultcard-header.zeugnisgen{
+    background-color: #46B8CA;
+  }
+  .zeugnisgen .resultcard-grade{
+    border-color: #46B8CA;
+  }
+  .resultcard{
+    box-sizing: border-box;
+    max-width: 620px;
+    min-width: 250px;
+    width: 100%;
+    margin: 20px 0px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    transition: .1s ease-out;
+      font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+      font-size: .9375rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #495057;
+      text-align: left;
+  
+  }
+  .text-Gesamtnote{
+    font-size: 14px;
+  }
+  .owner-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    width: 95%;
+  }
+  .owner-name{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .owner-job{
+    margin-bottom: 10px;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  .cardheadertabs{
+    display: flex;
+    width: 100%;
+  }
+  
+  .cardheadertabs div{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .1s linear;
+  }
+  
+  .cardheadertabs div:hover{
+    box-shadow: inset 0 -5px 0 rgb(61, 79, 105);
+    color: rgb(255, 255, 255);
+  }
+  
+  .cardheadertabs div.active{
+    color: rgb(255, 255, 255);
+    box-shadow: inset 0 -5px 0 rgb(61, 79, 105);
+    background-color: rgba(84, 84, 84, 0.21);
+  }
+  .rating {
+    color: rgb(255, 255, 255);
+  }
+  .tabpanel{
+    display: none;
+  }
+  
+  .tabpanel.active{
+    display: block;
+    width: 100%;
+  }
+  .auffaelligkeiten{
+    padding: 20px 10px;
+  }
+  
+  .kategorien, .auffaelligkeiten, .taetigkeiten{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    overflow-x: auto;
+  }
+  
+  .kategorie-note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    background-color: rgb(67, 158, 59);
+    margin-right: 20px;
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .kategorie{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    padding: 5px 5px;
+  
+  }
+  .kategorie-text p.name {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+  }
+  .kategorie-text p {
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: gray;
+  }
+  
+  .auffaelligkeit{
+    background-color: rgb(252, 237, 175);
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .auffaelligkeit.schwer{
+    background-color: rgb(255, 105, 64)
+  }
+  
+  .auffaelligkeit p{
+    margin-bottom: 0px;
+    color: #212529;
+  }
+
+  .zp-icon{
+    height: 1rem;
+  }
+  .zp-icon-big{
+    height: 2rem;
+  }
+  
+  
+  
+  .good-grade{
+    background-color: rgb(43, 152, 3);
+  }
+  
+  .no-grade{
+    background-color: rgb(159, 159, 159);
+  }
+  
+  .medium-grade{
+    background-color: rgb(255, 190, 0);
+  }
+  
+  .bad-grade{
+    background-color: rgb(255, 55, 0);
+  }
+  
+  .details-col{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    background-color: white;
+  }
+  .Zeugnisaufteilung{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    overflow-x: auto;
+  }
+  
+  .Zeugnisreihenfolge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .zeugniselement{
+    color: #3b3b3b;
+    font-weight: 600;
+    padding: .75rem 1.25rem;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  }
+  
+  
+  .table.aufteilung td, .table.aufteilung th  {
+  
+    text-align: center;
+  }
+  
+  
+  .notenkreis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    color: rgb(71, 136, 179);
+    font-weight: 500;
+  }
+  
+  .Teilnoten {
+    display: flex;
+    justify-content: center;
+  }
+  .teilnote{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .text-teilnote {
+    margin-left: 10px;
+    color: rgb(56, 56, 56);;
+  }
+  
+  .text-teilnote p {
+    line-height: 100%;
+    margin-bottom: 0px;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+  
+  }
+  
+  .imagecard {
+    position: relative;
+    max-width: 620px;
+    width: 100%;
+    margin: 20px 0px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    transition: .1s ease-out;
+  }
+  
+  .header-offset{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 100%;
+    display: flex;
+  }
+  .swipeleft{
+    padding-right: 5px;
+  }
