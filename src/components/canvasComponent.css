@@ -1,0 +1,129 @@
+.imageviewer {
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  position:relative; 
+  margin-bottom:1rem;
+  width: 100%;
+  max-width: 559px;
+}
+
+.imageviewer img{
+max-width: inherit;
+height: inherit;
+width: inherit;
+max-height: 790px;
+}
+
+canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: inherit;
+  width: 100%;
+}
+
+.zeugniselementDetail {
+  position: absolute;
+  z-index: 100;
+  top: 270px;
+  left: 50%;
+  width: 90%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgb(84, 185, 230);
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+[data-entity] {
+padding:.2em .3em;
+margin:0 .25em;
+line-height:1;
+display:inline-block;
+border-radius:.25em
+}
+[data-entity]:after {
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+content:attr(data-entity);
+font-size:.55em;
+line-height:1;
+padding:.35em .35em;
+border-radius:.35em;
+text-transform:uppercase;
+display:inline-block;
+vertical-align:middle;
+margin:0 0 .15rem .5rem;
+background:#fff;
+font-weight:700
+}
+
+[data-entity="person"] {
+background:#a6e22d;
+}
+[data-entity="per"] {
+background:#a6e22d;
+}
+[data-entity="norp"] {
+background:#ef60b4;
+}
+[data-entity="facility"] {
+background:#43c6fc;
+}
+[data-entity="org"] {
+background:#43c6fc;
+}
+[data-entity=gpe] {
+background:#fd9720
+}
+[data-entity=loc] {
+background:#fd9720
+}
+[data-entity=product] {
+background:#a99dfb
+}
+[data-entity=misc] {
+background:#a99dfb
+}
+[data-entity=event] {
+background:#fc0
+}
+[data-entity=work_of_art] {
+background:#fc0
+}
+[data-entity=language] {
+background:#fc0
+}
+[data-entity=date] {
+background:#2fbbab
+}
+[data-entity=time],
+[value=time] {
+background:#2fbbab
+}
+[data-entity=percent] {
+background:#bbb
+}
+[data-entity=money] {
+background:#bbb
+}
+[data-entity=quantity] {
+background:#bbb
+}
+[data-entity=ordinal] {
+background:#bbb
+}
+[data-entity=cardinal] {
+background:#bbb
+}
+[data-date=date] {
+background:rgb(48, 156, 151)
+}
+
+.headlinepara, .careertype{
+color: #43c6fc;
+};

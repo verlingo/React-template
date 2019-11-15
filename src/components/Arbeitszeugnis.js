@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import CanvasComponent from './canvasComponent';
 import './Arbeitszeugnis.css';
 import user from '../assets/img/user.svg'
 import briefcase from '../assets/img/briefcase.svg'
@@ -26,7 +27,7 @@ class Arbeitszeugnis extends Component {
           switch: 0,
         };
       }
-
+    //converts Duration to Months or Years
    jahreRechner(x){
         if(x >= 12){
           return Math.ceil(x/12) + ' Jahre';
@@ -54,7 +55,7 @@ class Arbeitszeugnis extends Component {
                     </div>
 
                     <div className="resultcard-grade" data-toggle="tooltip" data-delay="500" title="Gesamtnote">
-                        <div>{this.props.daten.Gesamtnote}</div>
+                        <div>{this.formatGrade(this.props.daten.Gesamtnote)}</div>
                         <div className="text-Gesamtnote">Gesamtnote</div>
                     </div>
                     <div className="rating" data-toggle="tooltip" data-delay="500" title="3">
@@ -171,9 +172,11 @@ class Arbeitszeugnis extends Component {
                 </div>
                 </div>
                 <div className="col-12 col-lg-6">
-                {/* <div className="imagecard" v-for="(page,index) in pages" :key="index">
-                    <canvas-component :page="page" :canvasindex="index" :showDebug="false" :certificate="this.props.daten.Dokument.Pages[index].Paragraphs" ></canvas-component>
-                </div>    */}
+                {this.props.daten.Dokument.Pages.map((page, k) => 
+                <div className="imagecard" key={k}>
+                    <CanvasComponent page={page} canvasindex={k} />
+                </div> 
+                )}  
                 </div>
                 {/* </div> */}
   </div>

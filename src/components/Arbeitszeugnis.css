@@ -15,25 +15,25 @@
     -webkit-transition: background 0.5s;
     transition: background 0.5s;
     background-color: #f79575;
-    line-height: 2;
+    line-height: 1.5;
   }
   
   .goodsentence {
     -webkit-transition: background 0.5s;
     transition: background 0.5s;
     background-color: #C4ED9D;
-    line-height: 2;
+    line-height: 1.5;
   }
   
   .neutral{
-    line-height: 2;
+    line-height: 1.5;
   }
   
   .mediumsentence {
     -webkit-transition: background 0.5s;
     transition: background 0.5s;
     background-color: #FAEBAA;
-    line-height: 2;
+    line-height: 1.5;
   }
   
   .auffaelligkeit h4 {
